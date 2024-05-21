@@ -1,43 +1,64 @@
 <html>
-<head>
-  <title>Forum</title>
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+  <head>
+    <title>Forum</title>
+    <!-- Upgraded to bootstrap v5 -->
+    <!-- <link
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-2 mb-2">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="page-header">
+            <h1>Forum</h1>
+          </div>
 
-      <div class="page-header">
-        <h1>Forum</h1>
-      </div>
+          <div class="posts container-fluid" id="posts-container"></div>
 
-      <div class="posts">
-      </div>
+          <form id="form" style="margin-top: 30px">
+            <h3>Add a new post</h3>
 
-      <form style="margin-top:30px;" onsubmit="event.preventDefault();">
-        <h3>Add a new post</h3>
-        
-        <div class="form-group">
-          <input id="name" type="text"
-            class="form-control"
-            placeholder="Name"></input>
+            <div class="form-group">
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                type="text"
+                class="form-control"
+                placeholder="Message"
+              ></textarea>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Post</button>
+          </form>
         </div>
-        
-        <div class="form-group">
-          <textarea id="message" type="text"
-          class="form-control"
-          placeholder="Message"></textarea>
-        </div>
-        
-        <button id="submit" class="btn btn-primary">Post</button>
-      </form>
-
+      </div>
     </div>
-  </div>
-  
-  <script src="main.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
-
-
-

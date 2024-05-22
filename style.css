@@ -5,3 +5,11 @@
 .post-message {
   font-size: large;
 }
+
+.posts {
+  max-height: 400px;
+}
+
+a {
+  cursor: pointer;
+}
